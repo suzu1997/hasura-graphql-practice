@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --env=jsdom --verbose"
+    "test": "jest --env=jsdom --verbose",
+    "gen-types": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@apollo/client": "^3.5.9",
@@ -23,6 +24,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.4",
+    "@graphql-codegen/cli": "2.6.1",
+    "@graphql-codegen/typescript": "^2.4.3",
+    "@graphql-codegen/typescript-operations": "2.3.0",
+    "@graphql-codegen/typescript-react-apollo": "3.2.6",
     "@testing-library/dom": "^8.11.3",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
