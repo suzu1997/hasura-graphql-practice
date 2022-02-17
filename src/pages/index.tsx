@@ -1,14 +1,11 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1 className="text-red-800 text-3xl">テスト</h1>
-    </div>
-  )
-}
+    <>
+      <p className="text-3xl font-bold">Next.js + GraphQL</p>
+    </>
+  );
+};
 
-export default Home
+export default Home;
